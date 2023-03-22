@@ -15,6 +15,11 @@ createApp({
                     this.userEmail.push(res.data.response);
                 });
             }
+            setTimeout(() => {
+                const timer = document.getElementById('wrap');
+                timer.style.visibility = 'visible';
+            }, 1500);
     },
 
+    
 }).mount('#app')

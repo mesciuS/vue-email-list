@@ -9,9 +9,12 @@
 </head>
 <body>
     <div id="app">
-        <ul v-for="mail in userEmail">
-            <li>{{mail}}</li>
-        </ul>
+        <div id="wrap" :style="{visibility: 'hidden'}">
+
+            <ul v-for="mail in userEmail">
+                <li>{{mail}}</li>
+            </ul>
+        </div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="script.js"></script>
